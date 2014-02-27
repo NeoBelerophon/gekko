@@ -52,6 +52,18 @@ var actors = [
     }]
   },
   {
+    name: 'XMPP bot',
+    description: 'XMPP module lets you communicate with Gekko on Jabber.',
+    slug: 'xmppbot',
+    async: false,
+    silent: false,
+    modes: ['realtime'],
+    dependencies: [{
+      module: 'node-xmpp',
+      version: '0.12.0'
+    }]
+  },
+  {
     name: 'Campfire bot',
     description: 'Campfire module lets you communicate with Gekko on Campfire.',
     slug: 'campfire',
